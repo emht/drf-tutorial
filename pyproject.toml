@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "drf-tutorial"
+version = "0.1.0"
+description = "The project created following drf tutorial"
+authors = ["Mohit Bansal"]
+license = "GNU"
+readme = "README.md"
+packages = [{include = "drf_tutorial"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+djangorestframework = "^3.14.0"
+django = "^4.1.7"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
