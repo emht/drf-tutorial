@@ -22,4 +22,6 @@ urlpatterns = [
     path('', lambda request: HttpResponse("Coming soon! Try /api", content_type="text/plain")),
     path('admin/', admin.site.urls),
     path('api/', include(('api.urls', 'api'), namespace='api')),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]

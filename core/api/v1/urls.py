@@ -11,6 +11,8 @@ router.register(r'groups', api_views.GroupViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('users/', snippet_views.UserList.as_view()),
+    path('users/<int:pk>/', snippet_views.UserDetail.as_view()),
     path('snippets/', snippet_views.SnippetList.as_view()),
     path('snippets/<int:pk>/', snippet_views.SnippetDetail.as_view()),
 ]
