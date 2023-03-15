@@ -53,6 +53,21 @@ django = ">=3.0"
 pytz = "*"
 
 [[package]]
+name = "pygments"
+version = "2.14.0"
+description = "Pygments is a syntax highlighting package written in Python."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "Pygments-2.14.0-py3-none-any.whl", hash = "sha256:fa7bd7bd2771287c0de303af8bfdfc731f51bd2c6a47ab69d117138893b82717"},
+    {file = "Pygments-2.14.0.tar.gz", hash = "sha256:b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297"},
+]
+
+[package.extras]
+plugins = ["importlib-metadata"]
+
+[[package]]
 name = "python-dotenv"
 version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
@@ -106,4 +121,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "930ff40121b419701f34307a98b8b436ab4700c0f1055b4f7f69efabe4ed07ad"
+content-hash = "22fb5f4d1958d8d5ee537882fceb7474961863f30710a25d17e957ef7a59d2c2"
