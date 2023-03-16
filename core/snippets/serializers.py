@@ -13,8 +13,8 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         
 class SnippetSerializer(serializers.HyperlinkedModelSerializer):
     url = serializers.HyperlinkedRelatedField(many=True, view_name='api:v1:snippet-detail', read_only=True) # Had to explicitly declare due to different namespacing
+    hightlight = serializers.HyperlinkedIdentityField(view_name='api:v1:snippet-highlight', format='html')
     owner = serializers.ReadOnlyField(source='owner.username')
-    hightlight = serializers.HyperlinkedIdentityField(view_name='api:v1:snippet-hightlight', format='html')
     class Meta:
         model = Snippet
         fields = ['url', 'id', 'title', 'code', 
